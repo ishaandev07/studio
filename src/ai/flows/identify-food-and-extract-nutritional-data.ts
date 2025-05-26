@@ -52,6 +52,7 @@ const prompt = ai.definePrompt({
   prompt: `You are an expert nutritionist. You will identify the food item in the image and extract its nutritional information.
 
   Analyze the following image of a food product and provide its nutritional information:
+  Prioritize identifying food items that are commonly found or available in India.
   Image: {{media url=photoDataUri}}
 
   Here is the nutritional information you should extract:

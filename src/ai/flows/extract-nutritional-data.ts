@@ -88,7 +88,7 @@ const extractNutritionalDataPrompt = ai.definePrompt({
   input: {schema: ExtractNutritionalDataInputSchema},
   output: {schema: ExtractNutritionalDataOutputSchema},
   prompt: `Extract the nutritional information for the given barcode. Use the lookupBarcode tool to find the information.
-
+Prioritize finding nutritional information for products that are available in India.
 Barcode: {{{barcode}}}
 
 If you cannot find the nutritional information, return a message saying that the information could not be found.`
